@@ -1,4 +1,4 @@
-package emailapp;
+package emailapplication;
 
 import java.util.Scanner;
 
@@ -37,8 +37,8 @@ public class Email {
     // Ask for the department
     private String setDepartment() {
         System.out.println("New Employee: "+firstName + "\nDEPARTMENT CODES:\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none\nEnter department code:");
-        Scanner in = new Scanner(System.in);
-        int departmentChoice = in.nextInt();
+        Scanner keyboard = new Scanner(System.in);
+        int departmentChoice = keyboard.nextInt();
         if(departmentChoice==1) {this.departmentChoice = departmentChoice; return "sales"; }
         else if(departmentChoice == 2) { this.departmentChoice = departmentChoice; return "development"; }
         else if(departmentChoice == 3) { this.departmentChoice = departmentChoice; return "accounting"; }
